@@ -44,6 +44,6 @@
 <script>
     setTimeout( function() {
         $("#accordion").accordion();
-        $("#python_val").progressbar({value: $('#python_val').getAttribute('value') });
+        $("#python_val").progressbar({value: document.getElementById('python_val').getAttribute('value') });
         }, 200);
 </script>
