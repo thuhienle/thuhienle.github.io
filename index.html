@@ -30,10 +30,10 @@
     <div>
         <p>
             <ul>
-        <li>Python</li><div value="35" id="python_val"></div>
-        <li>STATA</li>
-                <li>SPSS</li>
-                <li>MS Office</li>
+                <li>Python</li><div id="python_val"></div>
+                <li>STATA</li><div id="stata_val"></div>
+                <li>SPSS</li><div id="spss_val"></div>
+                <li>MS Office</li><div id="ms_val"></div>
             </ul>
         </p>
     </div>
@@ -44,6 +44,9 @@
 <script>
     setTimeout( function() {
         $("#accordion").accordion();
-        $("#python_val").progressbar({value: document.getElementById('python_val').getAttribute('value') });
+        $("#python_val").progressbar({value:50});
+        $("#stata_val").progressbar({value:30});
+        $("#spss_val").progressbar({value:30});
+        $("#ms_val").progressbar({value:85});
         }, 200);
 </script>
