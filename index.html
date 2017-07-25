@@ -28,9 +28,10 @@
     </div>
     <h3 style="color: crimson">Skills</h3>
     <div>
+        <div value="35" id="python_val"></div>
         <p>
             <ul>
-        <li>Python</li><div value="35" id="python_val"></div>
+        <li>Python</li>
                 <li>STATA</li>
                 <li>SPSS</li>
                 <li>MS Office</li>
@@ -44,5 +45,5 @@
     setTimeout( function() {
         $("#accordion").accordion();
         $("#python_val").progressbar({value: $('#python_val').val() });
-        }, 2000);
+        }, 200);
 </script>
