@@ -6,36 +6,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <title>Title</title>
 </head>
 <body>
-<span>Day la static webpage cua Hien</span>
+<span>My static webpage</span>
 <a href="about.html">About Me</a>
-<button id="tesst" onclick="alert('hien ham')">ClickMe</button>
-<button id="jquery_test">JQuery</button>
+<!--<button id="tesst" onclick="alert('hien ham')">ClickMe</button>-->
+<!--<button id="jquery_test">JQuery</button>-->
 <div id="accordion">
-    <h3>Education</h3>
+    <h3 style="color: greenyellow;">Education</h3>
     <div>
         <p>
             University of Alberta
         </p>
     </div>
-    <h3>Experience</h3>
+    <h3 style="color: antiquewhite">Experience</h3>
     <div>
         <p>
             Summer research
         </p>
     </div>
-    <h3>Skills</h3>
+    <h3 style="color: crimson">Skills</h3>
     <div>
         <p>
-            Python
+            <ul>
+        <li>Python</li><div type="hidden" value="35" id="python_val"></div>
+                <li>STATA</li>
+                <li>SPSS</li>
+                <li>MS Office</li>
+            </ul>
         </p>
     </div>
 </div>
 </body>
 </html>
 <script>
-    setTimeout( function() {$("#accordion").accordion();}, 2000);
+    setTimeout( function() {
+        $("#accordion").accordion();
+        $("#python_val").progressbar({value: $('#python_val').val() });
+        }, 2000);
 </script>
