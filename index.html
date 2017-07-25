@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        alert('hien ham');
+        $("#jquery_test").click(function() {
+            alert('jquery hien ham');
+        });
     </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"/>
     <title>Title</title>
 </head>
 <body>
 <span>Day la static webpage cua Hien</span>
 <a href="about.html">About Me</a>
+<button id="tesst" onclick="alert('hien ham')">ClickMe</button>
+<button id="jquery_test">JQuery</button>
 </body>
 </html>
