@@ -11,45 +11,38 @@
 <body>
 <span>My static webpage</span>
 <a href="about.html">About Me</a>
-<div id="tabs" style="height: 100%">
+<div id="tabs">
     <ul>
         <li><a href="#tabs-1">Education</a></li>
         <li><a href="#tabs-2">Experience</a></li>
         <li><a href="#tabs-3">Skills</a></li>
     </ul>
-    <!--<h3 style="color: greenyellow;">Education</h3>-->
     <div id="tabs-1">
         <p>
             University of Alberta
         </p>
     </div>
-    <!--<h3 style="color: antiquewhite">Experience</h3>-->
     <div id="tabs-2">
         <p>
-            Summer research
+            <div id="accordion">
+                <h3>2017</h3>
+                <div>
+                    <p>Summer research</p>
+                </div>
+                <h3>2015</h3>
+                <div>
+                    <p>Administrative assistant</p>
+                </div>
         </p>
     </div>
-    <!--<h3 style="color: crimson">Skills</h3>-->
     <div id="tabs-3">
         <p>
-            <div id="accordion">
-                <h3>Python</h3>
-                <div>
-                    <div id="python_val"></div>
-                </div>
-                <h3>STATA</h3>
-                <div>
-                    <div id="stata_val"></div>
-                </div>
-                <h3>SPSS</h3>
-                <div>
-                    <p><div id="spss_val"></div></p>
-                </div>
-                <h3>MS Office</h3>
-                <div>
-                    <p><div id="ms_val"></div></p>
-                </div>
-             </div>
+            <ul>
+                <li>Python</li><div id="python_val"></div>
+                <li>STATA</li><div id="stata_val"></div>
+                <li>SPSS</li><div id="spss_val"></div>
+                <li>MS Office</li><div id="ms_val"></div>
+            </ul>
         </p>
     </div>
 </div>
