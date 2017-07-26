@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>About Me</title>
 </head>
 <body>
-<img src="IMG_8890.JPG" alt="Meo" width="50%" style="float: left;"/>
+<img src="IMG_8890.JPG" alt="My Meo" width="50%" style="float: left;" title="Meo in Banff"/>
 <b style="font: 'Times New Roman';">My name is Hien</b><br>
-<em>This is Meo</em>
 <a href="index.html">Back</a>
 </body>
 </html>
+<script>
+    setTimeout( function() {
+        $( document ).tooltip({track:true});
+    }, 200);
+</script>

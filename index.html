@@ -11,7 +11,6 @@
 <body>
 <span>My static webpage</span>
 <a href="about.html">About Me</a><br>
-Update: <div id="datepicker" style="float:right"></div>
 <div id="tabs">
     <ul>
         <li><a href="#tabs-1">Education</a></li>
@@ -48,7 +47,7 @@ Update: <div id="datepicker" style="float:right"></div>
         </p>
     </div>
 </div>
-
+<div id="datepicker" style="float:right"></div>
 </body>
 </html>
 <script>
@@ -60,5 +59,6 @@ Update: <div id="datepicker" style="float:right"></div>
         $("#ms_val").progressbar({value:85});
         $("#tabs").tabs();
         $("#datepicker").datepicker();
+        $( document ).tooltip({track:true});
         }, 200);
 </script>
