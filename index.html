@@ -11,30 +11,45 @@
 <body>
 <span>My static webpage</span>
 <a href="about.html">About Me</a>
-<!--<button id="tesst" onclick="alert('hien ham')">ClickMe</button>-->
-<!--<button id="jquery_test">JQuery</button>-->
-<div id="accordion">
-    <h3 style="color: greenyellow;">Education</h3>
-    <div>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Education</a></li>
+        <li><a href="#tabs-2">Experience</a></li>
+        <li><a href="#tabs-3">Skills</a></li>
+    </ul>
+    <!--<h3 style="color: greenyellow;">Education</h3>-->
+    <div id="tabs-1">
         <p>
             University of Alberta
         </p>
     </div>
-    <h3 style="color: antiquewhite">Experience</h3>
-    <div>
+    <!--<h3 style="color: antiquewhite">Experience</h3>-->
+    <div id="tabs-2">
         <p>
             Summer research
         </p>
     </div>
-    <h3 style="color: crimson">Skills</h3>
-    <div>
+    <!--<h3 style="color: crimson">Skills</h3>-->
+    <div id="tabs-3">
         <p>
-            <ul>
-                <li>Python</li><div id="python_val"></div>
-                <li>STATA</li><div id="stata_val"></div>
-                <li>SPSS</li><div id="spss_val"></div>
-                <li>MS Office</li><div id="ms_val"></div>
-            </ul>
+            <div id="accordion">
+                <h3>Python</h3>
+                <div>
+                    <p><div id="python_val"></div></p>
+                </div>
+                <h3>STATA</h3>
+                <div>
+                    <p><div id="stata_val"></div></p>
+                </div>
+                <h3>SPSS</h3>
+                <div>
+                    <p><div id="spss_val"></div></p>
+                </div>
+                <h3>MS Office</h3>
+                <div>
+                    <p><div id="ms_val"></div></p>
+                </div>
+             </div>
         </p>
     </div>
 </div>
@@ -48,5 +63,6 @@
         $("#stata_val").progressbar({value:30});
         $("#spss_val").progressbar({value:30});
         $("#ms_val").progressbar({value:85});
+        $("#tabs").tabs();
         }, 200);
 </script>
