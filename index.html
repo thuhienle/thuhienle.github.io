@@ -47,7 +47,9 @@
         </p>
     </div>
 </div>
-<div id="datepicker"></div>
+<div id="draggable">
+    <div id="datepicker"></div>
+</div>
 </body>
 </html>
 <script>
@@ -60,5 +62,6 @@
         $("#tabs").tabs();
         $("#datepicker").datepicker();
         $( document ).tooltip({track:true});
+        $("#draggable").draggable();
         }, 200);
 </script>
