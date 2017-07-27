@@ -50,8 +50,9 @@
 <div id="draggable">
     <div id="datepicker"></div>
 </div>
+<div id="resizable">
 <iframe title="Environment" width="280px" height="191px" src="//weather.gc.ca/wxlink/wxlink.html?cityCode=ab-50&amp;lang=e" allowtransparency="true" frameborder="0"></iframe>
-
+</div>
 </body>
 </html>
 <script>
@@ -65,5 +66,6 @@
         $("#datepicker").datepicker();
         $( document ).tooltip({track:true});
         $("#draggable").draggable();
+        $("#resizable").resizable();
         }, 200);
 </script>
